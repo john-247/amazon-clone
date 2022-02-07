@@ -3,6 +3,7 @@ import Header from "./Header";
 import Home from "./Home";
 import Checkout from "./Checkout";
 import LoginPage from "./LoginPage";
+import Payment from "./Payment";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useEffect } from "react";
 import { auth } from "../firebase";
@@ -41,6 +42,10 @@ function App() {
           </Route>
           <Route exact path="/login">
             <LoginPage />
+          </Route>
+          <Route exact path="/payment">
+            <Header />
+            <Payment />
           </Route>
         </Switch>
       </Router>
